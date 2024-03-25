@@ -1,6 +1,6 @@
 # Creating-and-a-kernel-and-its-implementation-
 Creating an operating system (OS) kernel is essentially building the core foundation of an operating system. It's the program that directly interacts with the computer's hardware and provides essential services for other programs to run 
-The kernel manages the creation, execution, and termination of programs. It allocates resources like CPU time and memory to running processes.
+
 
 The first part of writing an operating system is to write a bootloader in 16 bit assembly (real mode).
 Bootloader is a piece of program that runs before any operating system is running.
