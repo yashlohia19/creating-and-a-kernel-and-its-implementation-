@@ -16,7 +16,7 @@ grub-mkrescue :-  Make a GRUB rescue image, this package internally calls the xo
 QEMU :-  Quick EMUlator to boot our kernel in virtual machine without rebooting the main system.
 
 **Using the code**
-Alright, writing a kernel from scratch is to print something on screen.
+Writing a kernel from scratch is to print something on screen.
 So we have a VGA(Visual Graphics Array), a hardware system that controls the display.
 
 **Implementation **
