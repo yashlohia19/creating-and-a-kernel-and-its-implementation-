@@ -1,8 +1,8 @@
-# set magic number to 0x1BADB002 to identified by bootloader 
-.set MAGIC,    0x1BADB002
-
 # set flags to 0
 .set FLAGS,    0
+
+# set magic number to 0x1BADB002 to identified by bootloader 
+.set MAGIC,    0x1BADB002
 
 # set the checksum
 .set CHECKSUM, -(MAGIC + FLAGS)
@@ -20,7 +20,7 @@
 stackBottom:
 
 # define the maximum size of stack to 512 bytes
-.skip 1024
+.skip 4096
 
 
 # set the stack top which grows from higher to lower
@@ -36,7 +36,7 @@ _start:
   # assign current stack pointer location to stackTop
 	mov $stackTop, %esp
 
-  # call the kernel main source
+  # call the kernel main function
 	call kernel_entry
 
 	cli
@@ -49,3 +49,8 @@ hltLoop:
 	jmp hltLoop
 
 .size _start, . - _start
+
+
+
+
+
